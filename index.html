@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create a Playlist</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!--   My Title Block Section -->
+  <section class="hero is-danger is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title">
+          Create a Playlist
+        </p>
+        <p class="subtitle">
+          Browse the artists below, and find someone new to listen to!
+        </p>
+      </div>
+    </div>
+  </section>
+<!--   My Playlist -->
+  <section id="playlist_container" class="container">
+    <!-- shopping cart container -->
+    <div class="columns is-centered">
+      <div className="column is-half">
+        <div class="box">
+          <p>
+            <span class="tag is-link is-light">Your Playlist </span>
+          </p>
+          <p>
+            (Add tunes to your playlist by browsing below and clicking the "Add Song" button.)</p>
+          <br>
+          <div id="cart"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--   LANA -->
+  <section class="container">
+    <div class="columns features">
+      <div id="lana" class="column is-4">
+        <div class="card is-shady item">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img src="https://i.pinimg.com/564x/9b/3a/14/9b3a14be5b3441c41017245150fef22b.jpg"
+                alt="Placeholder image" class="modal-button" data-target="modal-image-lana">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Lana</h4>
+              <p>Lana Del Rey is an alternative singer-songwriter. Her music is noted for its cinematic quality and
+                exploration of tragic romance, glamour, and melancholia, containing references to contemporary pop
+                culture and 1950s–1960s Americana.</p>
+              <span class="button is-fullwidth is-link modal-button" data-target="modal-card-lana">Browse Lana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="content has-text-centered">
+      <div class="control level-item">
+        <a href="https://github.com/BulmaTemplates/bulma-templates">
+          <div class="tags has-addons">
+            <span class="tag is-dark">Bulma Templates</span>
+            <span class="tag is-info">MIT license</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  <!-- LANA -->
+  <div id="modal-image-lana" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-huge is-image">
+      <!-- content -->
+      <img src="https://i.pinimg.com/564x/9b/3a/14/9b3a14be5b3441c41017245150fef22b.jpg" alt="image">
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <div id="modal-card-lana" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-large">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <img src="https://i.pinimg.com/564x/9b/3a/14/9b3a14be5b3441c41017245150fef22b.jpg"
+              alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Lana's Songs</p>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              <button id="Video Games" class="add-button">Add To Cart</button>
+              <span class="has-text-weight-bold"><a
+                  href="https://youtu.be/cE6wxDqdOV0" target="_blank">Video Games</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - This is the first song
+              she put out and launched her career.
+            </p>
+            <p>
+              <button id="Doin' Time" class="add-button">Add To Cart</button>
+              <span class="has-text-weight-bold"><a
+                  href="https://youtu.be/qolmz4FlnZ08"
+                  target="_blank">Doin' Time</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - Lana Del Rey's take on
+              Doin Time by Sublime.
+            </p>
+            <p>
+              <button id="Brooklyn Baby" class="add-button">Add To Cart</button>
+              <span class="has-text-weight-bold"><a
+                  href="https://youtu.be/T5xcnjAG8pE"
+                  target="_blank">Brooklyn Baby</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> -
+              This song is from her second album, Ultraviolence. This song was made popular by tiktok.
+            </p>
+            <p>
+              <button id="Young and Beautiful" class="add-button">Add To Cart</button>
+              <span class="has-text-weight-bold"><a
+                  href="https://youtu.be/Te11UaHOHMQ5"
+                  target="_blank">Young and Beautiful</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - A song written for
+              the 2014 version of The Great Gatsby.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      //The first argument are the elements to which the plugin shall be initialized
+      //The second argument has to be at least a empty object or a object with your desired options
+      OverlayScrollbars(document.querySelectorAll("body"), {});
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
