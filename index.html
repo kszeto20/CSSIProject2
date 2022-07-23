@@ -18,7 +18,7 @@
 
 <body>
 
-<!--   My Title Block Section -->
+  <!--   My Title Block Section -->
   <section class="hero is-danger is-small">
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -31,7 +31,7 @@
       </div>
     </div>
   </section>
-<!--   My Playlist -->
+  <!--   My Playlist -->
   <section id="playlist_container" class="container">
     <!-- shopping cart container -->
     <div class="columns is-centered">
@@ -49,24 +49,49 @@
     </div>
   </section>
 
-<!--   LANA -->
+  <!-- Cards -->
   <section class="container">
     <div class="columns features">
+
+      <!--   LANA -->
       <div id="lana" class="column is-4">
         <div class="card is-shady item">
           <div class="card-image">
-            <figure class="image is-16by9">
-              <img src="https://i.pinimg.com/564x/9b/3a/14/9b3a14be5b3441c41017245150fef22b.jpg"
-                alt="Placeholder image" class="modal-button" data-target="modal-image-lana">
+            <figure class="image">
+              <img src="https://i.pinimg.com/564x/9b/3a/14/9b3a14be5b3441c41017245150fef22b.jpg" alt="Placeholder image"
+                class="modal-button" data-target="modal-image-lana">
             </figure>
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>Lana</h4>
+              <h4>Lana Del Rey</h4>
               <p>Lana Del Rey is an alternative singer-songwriter. Her music is noted for its cinematic quality and
                 exploration of tragic romance, glamour, and melancholia, containing references to contemporary pop
                 culture and 1950s–1960s Americana.</p>
-              <span class="button is-fullwidth is-link modal-button" data-target="modal-card-lana">Browse Lana</span>
+              <span class="button is-fullwidth is-link modal-button" data-target="modal-card-lana">Browse Lana's
+                Music</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   PHOEBE -->
+      <div id="phoebe" class="column is-4">
+        <div class="card is-shady item">
+          <div class="card-image">
+            <figure class="image">
+              <img
+                src="https://thefader-res.cloudinary.com/private_images/w_640,c_limit,f_auto,q_auto:eco/18960007Final_xagiy6/phoebe-bridgers-cover-story-interview.jpg"
+                alt="Placeholder image" class="modal-button" data-target="modal-image-phoebe">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Phoebe Bridgers</h4>
+              <p>Phoebe Bridgers is a Los Angeles-based artist whose songs always have a signature hook-filled indie pop
+                vibe, witty lyricss, and commanding melodies.</p>
+              <span class="button is-fullwidth is-link modal-button" data-target="modal-card-phoebe">Browse
+                Pheobe's Music</span>
             </div>
           </div>
         </div>
@@ -74,7 +99,7 @@
     </div>
   </section>
 
-  
+
   <footer>
     <div class="content has-text-centered">
       <div class="control level-item">
@@ -87,12 +112,13 @@
       </div>
     </div>
   </footer>
-  
+
   <!--  ===============
     HERE BE MODALS
     ===============  -->
 
   <!-- LANA -->
+  <!--   lana's photo -->
   <div id="modal-image-lana" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
@@ -102,15 +128,16 @@
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
+
+  <!--   lana's modal -->
   <div id="modal-card-lana" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-large">
       <!-- content -->
       <div class="card">
         <div class="card-image">
-          <figure class="image is-16by9">
-            <img src="https://i.pinimg.com/564x/9b/3a/14/9b3a14be5b3441c41017245150fef22b.jpg"
-              alt="Placeholder image">
+          <figure class="image">
+            <img src="https://i.pinimg.com/564x/9b/3a/14/9b3a14be5b3441c41017245150fef22b.jpg" alt="Placeholder image">
           </figure>
         </div>
         <div class="card-content">
@@ -121,30 +148,28 @@
           </div>
           <div class="content">
             <p>
-              <button id="Video Games" class="add-button">Add To Cart</button>
-              <span class="has-text-weight-bold"><a
-                  href="https://youtu.be/cE6wxDqdOV0" target="_blank">Video Games</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - This is the first song
+              <button id="video-games" class="add-button" data-name="Video Games">Add to Playlist</button>
+              <span class="has-text-weight-bold"><a href="https://youtu.be/cE6wxDqdOV0" target="_blank">Video
+                  Games</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - This is the first song
               she put out and launched her career.
             </p>
             <p>
-              <button id="Doin' Time" class="add-button">Add To Cart</button>
-              <span class="has-text-weight-bold"><a
-                  href="https://youtu.be/qolmz4FlnZ08"
-                  target="_blank">Doin' Time</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - Lana Del Rey's take on
+              <button id="doin-time" class="add-button" data-name="Doin' time">Add to Playlist</button>
+              <span class="has-text-weight-bold"><a href="https://youtu.be/qolmz4FlnZ08" target="_blank">Doin'
+                  Time</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - Lana Del Rey's take on
               Doin Time by Sublime.
             </p>
             <p>
-              <button id="Brooklyn Baby" class="add-button">Add To Cart</button>
-              <span class="has-text-weight-bold"><a
-                  href="https://youtu.be/T5xcnjAG8pE"
-                  target="_blank">Brooklyn Baby</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> -
+              <button id="brooklyn-baby" class="add-button" data-name="Brooklyn Baby">Add to Playlist</button>
+              <span class="has-text-weight-bold"><a href="https://youtu.be/T5xcnjAG8pE" target="_blank">Brooklyn
+                  Baby</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> -
               This song is from her second album, Ultraviolence. This song was made popular by tiktok.
             </p>
             <p>
-              <button id="Young and Beautiful" class="add-button">Add To Cart</button>
-              <span class="has-text-weight-bold"><a
-                  href="https://youtu.be/Te11UaHOHMQ5"
-                  target="_blank">Young and Beautiful</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - A song written for
+              <button id="young-and-beautiful" class="add-button" data-name="Young and Beautiful">Add to
+                Playlist</button>
+              <span class="has-text-weight-bold"><a href="https://youtu.be/Te11UaHOHMQ5" target="_blank">Young and
+                  Beautiful</a></span>, by <span class="has-text-weight-bold">Lana Del Rey</span> - A song written for
               the 2014 version of The Great Gatsby.
             </p>
           </div>
@@ -154,6 +179,75 @@
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
+
+  <!--   PHEOBE -->
+  <!--   phoebe's photo -->
+  <div id="modal-image-phoebe" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-huge is-image">
+      <!-- content -->
+      <img
+        src="https://thefader-res.cloudinary.com/private_images/w_640,c_limit,f_auto,q_auto:eco/18960007Final_xagiy6/phoebe-bridgers-cover-story-interview.jpg"
+        alt="image">
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!--   phoebe's modal -->
+
+  <div id="modal-card-phoebe" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-large">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image">
+
+            <img
+              src="https://thefader-res.cloudinary.com/private_images/w_640,c_limit,f_auto,q_auto:eco/18960007Final_xagiy6/phoebe-bridgers-cover-story-interview.jpg"
+              alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Phoebe's Songs</p>
+            </div>
+          </div>
+          <div class="content">
+            <p>
+              <button id="motion-sickness" class="add-button" data-name="Motion Sickness">Add to Playlist</button>
+              <span class="has-text-weight-bold"><a href="https://www.youtube.com/watch?v=9sfYpolGCu8"
+                  target="_blank">Motion Sickness</a></span>, by <span class="has-text-weight-bold">Phoebe
+                Bridgers</span> - This is currently her most streamed song on spotify.
+            </p>
+            <p>
+              <button id="kyoto" class="add-button" data-name="Kyoto">Add to Playlist</button>
+              <span class="has-text-weight-bold"><a href="https://www.youtube.com/watch?v=Tw0zYd0eIlk"
+                  target="_blank">Kyoto</a></span>, by <span class="has-text-weight-bold">Phoebe Bridgers</span> - The
+              quintessential love song!
+            </p>
+            <p>
+              <button id="moon-song" class="add-button" data-name="Moon Song">Add to Playlist</button>
+              <span class="has-text-weight-bold"><a href="https://www.youtube.com/watch?v=SUUPN5LA-3k"
+                  target="_blank">Moon Song</a></span>, by <span class="has-text-weight-bold">Phoebe Bridgers</span> -
+              This song is about learning to love someone who doesn't love themselves.
+            </p>
+            <p>
+              <button id="i-know-the-end" class="add-button" data-name="I Know The End">Add to Playlist</button>
+              <span class="has-text-weight-bold"><a href="https://www.youtube.com/watch?v=WJ9-xN6dCW4" target="_blank">I
+                  Know the End</a></span>, by <span class="has-text-weight-bold">Phoebe Bridgers</span> - A depper song
+              Pheobe wrote to cope with her heartbreak.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
